@@ -16,8 +16,8 @@ export default class Store extends Component {
                         if (cart.length > 0) {
                             return (
                                 <React.Fragment>
-                                    <Title name="your" title="cart" />
-                                    <CartColumns />
+                                    <Title name="your" title="cart" id="title"/>
+                                    <CartColumns id="cartcolumns"/>
                                     <CartList value={value} />
                                     <CartTotals value={value} history={this.props.history} />
                                 </React.Fragment>
